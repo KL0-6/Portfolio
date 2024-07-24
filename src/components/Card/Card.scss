@@ -1,0 +1,28 @@
+.Cards
+{
+    border: 1px solid #2F3034;
+    border-radius: 10px;
+    position: relative;
+
+    margin: 5px;
+
+    height: 250px;
+    width: clamp(1em, 90vw, 500px);
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+    text-align: center;
+
+    h2
+    {
+        font-weight: 300;
+        margin-bottom: 1px;
+    }
+
+    .label
+    {
+        margin-top: 0;
+        font-size: 12px;
+    }
+}

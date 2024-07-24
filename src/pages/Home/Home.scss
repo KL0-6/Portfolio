@@ -1,0 +1,47 @@
+$textColor: #EBEBEB;
+
+@keyframes gradientAnim 
+{
+    0% 
+    {
+        background-position: 0% 0%;
+    }
+    50% 
+    {
+        background-position: 100% 0%;
+    }
+    100% 
+    {
+        background-position: 0% 100%;
+    }
+}
+
+.title
+{
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: clamp(25px, 5vw, 40px);
+
+    p.gradientColor 
+    {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(45deg, #4568DC, #B06AB3);
+        background-size: 200% 200%;
+        background-clip: text;
+        color: transparent;
+        animation: gradientAnim 5s linear infinite;
+    }
+}
+
+.description
+{
+    margin-top: 0;
+}
+    
+.wavingHand
+{
+    color: #ffdd5d;
+    font-size: 3em;
+    padding: 0;
+}

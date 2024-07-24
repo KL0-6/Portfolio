@@ -1,0 +1,17 @@
+.cardDiv
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-self: center;
+    max-width: 90%;
+}
+
+
+.dottedA
+{
+    color: inherit;
+    border-bottom: 1px dotted #2c2c2c;
+    text-decoration: none;
+}

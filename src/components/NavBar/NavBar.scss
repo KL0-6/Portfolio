@@ -1,0 +1,83 @@
+
+
+
+.navbar
+{
+    display: flex;
+    margin: 10px 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+
+    img
+    {
+        width: 48px;
+        height: 31px;
+        margin-top: auto;
+        margin-bottom: auto;
+        transition: transform 250ms ease-in-out;
+    }
+
+    img:hover 
+    {
+        transform: rotate(180deg);
+        height: 41px;
+    }
+
+    .navButton
+    {
+        color: inherit;
+        text-decoration: none;
+        background-color: transparent;
+        border-color: transparent;
+        font-size: 16px;
+    }
+
+    ul
+    {
+        display: flex;
+        margin: auto;
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    li
+    {
+        margin: 0px 5px;
+        height: 100%;
+        width: 65px;
+    }
+
+    li:hover
+    {
+        color: #C6426E;
+    }
+    
+    .socials
+    {
+        margin-left: 5px;        
+        border: 0px;
+        background-color: #2F3034;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+    }
+
+    .menu
+    {
+        @extend .socials;
+        margin-left: auto;
+    }
+
+    .socials:hover
+    {
+        background-color: #C6426E;
+    }
+
+    .socials img
+    {   
+        color: white;
+        width: 23px;
+        height: 23px;
+    }
+}

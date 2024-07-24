@@ -77,8 +77,8 @@ const NavBar = ({githubUrl, linkedinUrl, isMobile} : Props) =>
                             </div>
 
                             <ul style={{ paddingBottom: "15px" }}>
-                                <li><button style={{ backgroundColor: "#141414", height: "40px", borderRadius: "10px" }} className="navButton" onClick={() => scrollToView("about")}>About</button></li>
-                                <li><button style={{ backgroundColor: "#141414", height: "40px", borderRadius: "10px" }} className="navButton" onClick={() => scrollToView("projects")}>Projects</button></li>
+                                <li><button style={{ backgroundColor: "#141414", height: "40px", borderRadius: "10px", padding: "10px" }} className="navButton" onClick={() => scrollToView("about")}>About</button></li>
+                                <li><button style={{ backgroundColor: "#141414", height: "40px", borderRadius: "10px", padding: "10px" }} className="navButton" onClick={() => scrollToView("projects")}>Projects</button></li>
                             </ul>
 
                     </div>

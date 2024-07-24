@@ -4,11 +4,13 @@ import { TbBrandCpp, TbBrandTypescript, TbBrandJavascript, TbFileTypeSql } from 
 import { MdOutlinePhp } from "react-icons/md";
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { DiRedis } from "react-icons/di";
+import { SiLua } from "react-icons/si";
 
-import { openUrl } from "../../util/util";
+import { openUrl, scrollToView } from "../../util/util";
 
 import "./About.scss"
 import IconButton from "../../components/IconButton";
+import Button from "../../components/Button";
 
 const iconStyle: CSSProperties = 
 {
@@ -20,7 +22,7 @@ const About = () =>
 {
     return (
         <div id="about" className="pageBodyDiv center" style={{ minHeight: "100vh" }}>
-            <div className="center" style={{ maxWidth: "80%", flexGrow: "1" }}>
+            <div className="center" style={{ display: "flex", maxWidth: "80%", flexGrow: "1" }}>
                 <h1 className="pageTitle">Get to know me!</h1>
                 <h3 className="sectionTitle">History</h3>
                 <p className="aboutMe">I'm a 17 year old highschool graduate from The Bronx, New York! I've been interested in computers ever since I was five and have been programming since I was 13.</p>
@@ -49,6 +51,10 @@ const About = () =>
                         <MdOutlinePhp style={iconStyle}/>
                     </IconButton>
 
+                    <IconButton title="Lua" onClick={() => openUrl("https://www.lua.org/") }>
+                        <SiLua style={iconStyle}/>
+                    </IconButton>
+
                     <IconButton title="HTML" onClick={() => openUrl("https://developer.mozilla.org/en-US/docs/Web/HTML") }>
                         <FaHtml5 style={iconStyle}/>
                     </IconButton>
@@ -69,6 +75,13 @@ const About = () =>
                         <FaReact style={iconStyle}/>
                     </IconButton>
                 </div>
+
+                <h3 className="sectionTitle">Projects</h3>
+
+                <Button onClick={() => scrollToView("projects")}>
+                    Explore Projects!
+                </Button>
+                
             </div>
         </div>
     )

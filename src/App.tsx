@@ -19,7 +19,7 @@ function App()
             </div>
             
             <About/>
-            <Projects/>
+            <Projects isMobile={isMobile}/>
   
         </>
     )

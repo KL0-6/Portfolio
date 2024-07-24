@@ -23,6 +23,10 @@
 
 .langDiv
 {
+    justify-content: space-evenly;
+
+    flex: 0 0 100%;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

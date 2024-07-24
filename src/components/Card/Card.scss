@@ -4,16 +4,17 @@
     border-radius: 10px;
     position: relative;
 
-    margin: 5px;
+    flex: 1 1 25%;
+    margin: 10px;
 
-    height: 250px;
-    width: clamp(1em, 90vw, 500px);
+    height: clamp(0px, fit-content, 250px);
+    width: clamp(1em, 30vw, 600px);
 
     padding-right: 10px;
     padding-left: 10px;
-
     text-align: center;
-
+    
+    
     h2
     {
         font-weight: 300;
@@ -24,5 +25,23 @@
     {
         margin-top: 0;
         font-size: 12px;
+    }
+}
+
+@media (max-width: 700px) 
+{
+    .Cards 
+    {
+        flex: 1 1 30%;
+        text-align: center;
+    }
+}
+  
+@media (max-width: 500px) 
+{
+    .Cards 
+    {
+        flex: 1 1 100%;
+        text-align: center;
     }
 }

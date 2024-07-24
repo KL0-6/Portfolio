@@ -6,13 +6,14 @@ interface Props
 {
     title: string;
     label: string;
+    style?: CSSProperties;
     children?: ReactNode;
 }
 
-const Card = ({ title, label, children }: Props) => 
+const Card = ({ title, label, style, children }: Props) => 
 {
     return (
-       <div className="Cards">
+       <div className="Cards" style={style}>
             <h2>{title}</h2>
             <p className="label">{label}</p>
             {children}

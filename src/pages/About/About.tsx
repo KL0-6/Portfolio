@@ -26,13 +26,15 @@ const About = () =>
         <div id="about" className="pageBodyDiv center" style={{ minHeight: "100vh" }}>
             <div className="center" style={{ display: "flex", maxWidth: "80%", flexGrow: "1" }}>
                 <h1 className="pageTitle">Get to know me!</h1>
-                <h3 className="sectionTitle">History</h3>
+
+                <h2 className="sectionTitle">History</h2>
+
                 <p className="aboutMe">I'm a 17 year old highschool graduate from The Bronx, New York! I've been interested in computers ever since I was five and have been programming since I was 13.</p>
 
-                <h3 className="sectionTitle">Hobbies</h3>
+                <h2 className="sectionTitle">Hobbies</h2>
                 <p className="aboutMe">Other than technology, I love to go outside and walk to relax after a long week. I'm also a skateboarder!</p>
 
-                <h3 className="sectionTitle">Skills</h3>
+                <h2 className="sectionTitle">Skills</h2>
 
                 <br/>
 
@@ -78,7 +80,7 @@ const About = () =>
                     </IconButton>
                 </div>
 
-                <h3 className="sectionTitle">Projects</h3>
+                <h2 className="sectionTitle">Projects</h2>
 
                 <Button onClick={() => scrollToView("projects")}>
                     Explore Projects!

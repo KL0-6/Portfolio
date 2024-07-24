@@ -32,12 +32,12 @@ const NavBar = ({githubUrl, linkedinUrl, isMobile} : Props) =>
     return (
         <>
             <nav className="navbar">
-                <img src={Logo}></img>
+                <img alt="logo" src={Logo}></img>
 
                 {
                     isMobile ? 
                     (
-                        <button className="menu" onClick={() => setExtendNav(!extendNav) }>
+                        <button className="menu" aria-label="menu" onClick={() => setExtendNav(!extendNav) }>
                             <CiMenuBurger style={iconStyle}/>
                         </button>
                     ) :
@@ -49,11 +49,11 @@ const NavBar = ({githubUrl, linkedinUrl, isMobile} : Props) =>
                                 <li><button className="navButton">Blog</button></li>
                             </ul>
 
-                            <button className="socials" onClick={() => openUrl(githubUrl) }>
+                            <button className="socials" aria-label="Github" onClick={() => openUrl(githubUrl) }>
                                 <FaGithub style={iconStyle}/>
                             </button>
 
-                            <button className="socials" onClick={() => openUrl(linkedinUrl) }>
+                            <button className="socials" aria-label="Linkedin" onClick={() => openUrl(linkedinUrl) }>
                                 <FaLinkedin style={iconStyle}/>
                             </button>
                         </>

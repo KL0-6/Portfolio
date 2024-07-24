@@ -46,7 +46,6 @@ const NavBar = ({githubUrl, linkedinUrl, isMobile} : Props) =>
                             <ul>
                                 <li><button className="navButton" onClick={() => scrollToView("about")}>About</button></li>
                                 <li><button className="navButton" onClick={() => scrollToView("projects")}>Projects</button></li>
-                                <li><button className="navButton">Blog</button></li>
                             </ul>
 
                             <button className="socials" aria-label="Github" onClick={() => openUrl(githubUrl) }>
@@ -65,12 +64,23 @@ const NavBar = ({githubUrl, linkedinUrl, isMobile} : Props) =>
 
                 (extendNav && isMobile) && 
                 (
-                    <div className="navbar">
-                            <ul>
-                                <li><button className="navButton" onClick={() => scrollToView("about")}>About</button></li>
-                                <li><button className="navButton" onClick={() => scrollToView("projects")}>Projects</button></li>
-                                <li><button className="navButton">Blog</button></li>
+                    <div className="navbar" style={{ flexDirection: "column", borderBottom: "1px solid white" }}>
+                            <div style={{ paddingBottom: "15px" }}>
+                                <button className="socials" aria-label="Github" onClick={() => openUrl(githubUrl) }>
+                                    <FaGithub style={iconStyle}/>
+                                </button>
+
+
+                                <button className="socials" aria-label="Linkedin" onClick={() => openUrl(linkedinUrl) }>
+                                    <FaLinkedin style={iconStyle}/>
+                                </button>
+                            </div>
+
+                            <ul style={{ paddingBottom: "15px" }}>
+                                <li><button style={{ backgroundColor: "#141414", height: "40px", borderRadius: "10px" }} className="navButton" onClick={() => scrollToView("about")}>About</button></li>
+                                <li><button style={{ backgroundColor: "#141414", height: "40px", borderRadius: "10px" }} className="navButton" onClick={() => scrollToView("projects")}>Projects</button></li>
                             </ul>
+
                     </div>
                 )
             }

@@ -1,4 +1,4 @@
-import React, { CSSProperties } from "react"
+import { CSSProperties } from "react"
 
 import { TbBrandCpp, TbBrandTypescript, TbBrandJavascript, TbFileTypeSql } from "react-icons/tb";
 import { MdOutlinePhp } from "react-icons/md";
@@ -8,9 +8,11 @@ import { SiLua } from "react-icons/si";
 
 import { openUrl, scrollToView } from "../../util/util";
 
-import "./About.scss"
 import IconButton from "../../components/IconButton";
 import Button from "../../components/Button";
+
+import "./About.scss"
+
 
 const iconStyle: CSSProperties = 
 {

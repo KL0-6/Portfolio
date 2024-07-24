@@ -1,10 +1,10 @@
-import React, { CSSProperties } from "react"
-
+import { CSSProperties } from "react"
+import { FaGithub } from "react-icons/fa";
 import { openUrl } from "../../util/util";
+
 import Card from "../../components/Card"
 import IconButton from "../../components/IconButton"
 
-import { FaGithub } from "react-icons/fa";
 
 import "./Projects.scss"
 
@@ -14,12 +14,7 @@ const iconStyle: CSSProperties =
     fontSize: "2em",
 };
 
-interface Props
-{
-    isMobile: boolean;
-}
-
-const Projects = ({ isMobile } : Props) => 
+const Projects = () => 
 {
     return (
         <div id="projects" className="pageBodyDiv center" style={{ minHeight: "100vh" }}>
